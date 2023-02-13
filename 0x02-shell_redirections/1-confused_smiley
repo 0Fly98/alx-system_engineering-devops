@@ -1,4 +1,2 @@
 #!/bin/bash
-confused_smiley 
-
-"(Ôo)'
+echo '"(Ôo)'\'
