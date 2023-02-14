@@ -1,0 +1,2 @@
+#!/bin/bash
+printenv . ./5-local_variables
