@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Initialize the counter
+n=1
+
+# Iterate the loop 10 times
+while [ $n -le 10 ]; do
+    echo "Best School"
+    ((n++))
+done
+
