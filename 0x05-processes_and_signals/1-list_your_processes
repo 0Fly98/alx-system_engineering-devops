@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get all processes (including those without a TTY) and format the output
+ps -eo pid,ppid,user,cmd --forest
+
+# Explanation:
+# - `-e`: Select all processes.
+# - `-o`: Specify the output format.
+#   - `pid`: Process ID.
+#   - `ppid`: Parent process ID.
+#   - `user`: User associated with the process.
+#   - `cmd`: Command being executed.
+# - `--forest`: Display the process hierarchy in a tree-like structure.
