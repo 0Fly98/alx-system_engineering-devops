@@ -1,10 +1,4 @@
 #!/bin/bash
-# shellcheck disable=SC2009
+# Print the PID of bash process
 
-# Search for lines containing the word "bash" in all processes
-ps aux | grep -w "bash"
-
-# Explanation:
-# - `ps aux`: Lists all processes.
-# - `grep -w "bash"`: Filters lines containing the exact word "bash."
-# - The `shellcheck disable=SC2009` comment suppresses a specific ShellCheck warning.
+ps -aux | grep bash
