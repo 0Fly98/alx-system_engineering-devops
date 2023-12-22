@@ -1,0 +1,14 @@
+#!/bin/bash
+# shellcheck disable=SC2009
+
+# Get all processes (including those without a TTY) and filter for "bash"
+while read -r pid cmd; do
+    if [[ "$cmd" == *"bash"* ]]; then
+        echo "$pid $cmd"
+    fi
+done < <(ps -eo pid,cmd)
+
+# Explanation:
+# - `ps -eo pid,cmd`: Lists all processes with their PIDs and commands.
+# - The `while read -r pid cmd` loop processes each line of the output.
+# - If the command contains "bash," it prints the PID and command.
