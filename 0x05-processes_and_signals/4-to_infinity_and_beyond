@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Infinite loop
-while true; do
-    echo "To infinity and beyond"
-    sleep 2
-done
+# Print the PID of bash process alternative way
+
+pgrep bash -l
