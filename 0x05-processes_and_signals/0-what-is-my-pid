@@ -1,3 +1,4 @@
 #!/bin/bash
-#script displays its own PID
-echo "My PID is $$"
+# Print current PID
+
+echo $$
